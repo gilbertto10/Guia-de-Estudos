@@ -1,10 +1,12 @@
+// Cria um cabeçalho h2 para um assunto específico.
 function createSubjectHeader(subject) {
     const header = document.createElement("h2");
     header.classList.add("subject-title");
     header.textContent = subject;
     return header;
   }
-  
+  // Adiciona uma tarefa à lista de tarefas no DOM.
+
   function addTaskToList(task) {
     let subjectContainer = elements.taskList.querySelector(`[data-subject="${task.subject}"]`);
   
