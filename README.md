@@ -10,6 +10,7 @@ init.js,
 subjects.js,
 taskElements.js,
 tasksManager.js
+style.css
 
 Aqui está um resumo de cada arquivo e suas respectivas funções:
 
