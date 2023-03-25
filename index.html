@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista com checkbox</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Lista de tarefas</h1>
+  <form>
+    <input type="text" id="newSubject" placeholder="Digite a nova matéria">
+    <button type="button" id="addSubject">Adicionar matéria</button>
+  </form>
+  <ul id="subjectList"></ul>
+  <form>
+    <select id="subjectSelect"></select>
+    <textarea id="newTasks" placeholder="Digite as novas tarefas, separadas por ponto e vírgula ou quebra de linha"></textarea>
+    <button type="button" id="addTask">Adicionar tarefas</button>
+  </form>
+  <div id="taskList"></div>
+  <div>
+    <p>Tarefas concluídas: <span id="completedCount">0</span></p>
+    <p>Tarefas pendentes: <span id="pendingCount">0</span></p>
+  </div>
+  <button type="button" id="clearLocalStorage">Limpar localStorage</button>
+  <p>Dias até 20/05/2023: <span id="daysLeft"></span></p>
+  <p>Checkboxes não marcadas por dia: <span id="unmarkedPerDay"></span></p>
+  <script src="elements.js"></script>
+  <script src="subjects.js"></script>
+  <script src="tasksManager.js"></script>
+  <script src="taskElements.js"></script>
+  <script src="counts.js"></script>
+  <script src="events.js"></script>
+  <script src="init.js"></script>
+</body>
+</html>
